@@ -1,0 +1,25 @@
+
+# Local configuration and generated files
+.env
+.env.*
+node_modules/
+.venv/
+__pycache__/
+build/
+dist/
+target/
+.next*/
+.angular/
+.gradle/
+*.log
+*.db
+*.sqlite*
+*.pem
+*.key
+*.jks
+keystore.properties
+local.properties
+google-services.json
+
+!licensing/public.key
+!config/public.key

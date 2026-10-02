@@ -1,0 +1,19 @@
+{
+  "name": "NordRen København",
+  "short_name": "NordRen",
+  "description": "Booking, opgaver og dokumentation for NordRen",
+  "lang": "da",
+  "start_url": "/#/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f9ff",
+  "theme_color": "#274fc5",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

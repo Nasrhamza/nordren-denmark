@@ -1,0 +1,12 @@
+const CACHE='nordren-shell-v20';
+const SHELL=['/icons/message-envelope.svg','/icons/app-home.svg','/icons/app-booking.svg','/icons/app-tasks.svg','/icons/app-account.svg','/icons/app-services.svg','/icons/app-prices.svg','/icons/app-admin.svg','/icons/app-photos.svg','/icons/app-contact.svg','/icons/app-settings.svg','/icons/app-history.svg','/icons/app-team.svg','/icons/app-complaints.svg','/icons/app-announcements.svg','/icons/app-refresh.svg','/icons/app-about.svg','/','/index.html','/styles.css','/mobile-app.css','/ui-components.css','/account-colors.css','/account-palette.css','/app.js','/workflow-tools.js','/account-tools.js','/business-page.js','/shared/catalog.js','/icons/notification-blue.svg','/icons/notification-red.svg','/icons/logout-red.svg','/vendor/leaflet/leaflet.js','/vendor/leaflet/leaflet.css','/manifest.webmanifest','/app-icon.svg'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{
+  const url=new URL(event.request.url);
+  if(event.request.method!=='GET'||url.origin!==self.location.origin||url.pathname.startsWith('/api/')||url.pathname.endsWith('.mp4')||event.request.headers.has('range'))return;
+  event.respondWith(fetch(event.request).then(response=>{const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(event.request,copy));return response;}).catch(()=>caches.match(event.request).then(cached=>cached||caches.match('/index.html'))));
+});
+
+self.addEventListener('push',event=>{let data={};try{data=event.data?.json()||{};}catch{}event.waitUntil(self.registration.showNotification('NordRen',{body:data.body||'Du har en ny besked.',icon:'/app-icon.svg',badge:'/app-icon.svg',tag:data.tag||'nordren',data:{url:'/#/notifications'}}));});
+self.addEventListener('notificationclick',event=>{event.notification.close();event.waitUntil((async()=>{const url=new URL('/#/notifications',self.location.origin).href;const windows=await self.clients.matchAll({type:'window',includeUncontrolled:true});const client=windows.find(c=>new URL(c.url).origin===self.location.origin);if(client){await client.navigate(url);await client.focus();}else await self.clients.openWindow(url);})());});

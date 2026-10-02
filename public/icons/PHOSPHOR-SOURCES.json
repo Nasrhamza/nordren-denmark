@@ -1,0 +1,27 @@
+{
+  "library": "Phosphor Icons",
+  "weight": "duotone",
+  "source": "https://github.com/phosphor-icons/core",
+  "revision": "2b75f3ad12b420c9504ef05df8d2564a28f8500e",
+  "license": "MIT",
+  "icons": {
+    "home": "house",
+    "booking": "calendar-plus",
+    "tasks": "clipboard-text",
+    "account": "user-circle",
+    "services": "broom",
+    "prices": "tag",
+    "admin": "squares-four",
+    "photos": "images",
+    "contact": "chat-circle-dots",
+    "settings": "gear-six",
+    "history": "clock-counter-clockwise",
+    "team": "users-three",
+    "complaints": "chat-centered-text",
+    "announcements": "megaphone",
+    "refresh": "arrows-clockwise",
+    "about": "info"
+  },
+  "logout": "sign-out",
+  "adaptation": "Blue/mauve foreground and cyan secondary fill; original paths unchanged."
+}

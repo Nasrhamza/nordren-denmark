@@ -1,0 +1,85 @@
+/* Supplied blue/cyan palette with mauve accents across all accounts. */
+.app-shell{--palette-royal:#0013ff;--palette-blue:#0083ff;--palette-sky:#00bcff;--palette-cyan:#00d7f8;--palette-aqua:#00e9ff;--app-accent:#173d88;background:linear-gradient(145deg,#f0fbff,#e9f4ff);color:#173d88}
+#app .app-shell .account-welcome{background:linear-gradient(115deg,#e6f6ff,#d9fbff);border-color:#b8eaff}
+#app .app-shell .account-welcome:after{display:none}
+#app .app-shell .account-welcome .eyebrow{color:#173d88}
+#app .app-shell .app-topbar{background:linear-gradient(110deg,#0013ff,#0083ff);border-color:#0083ff}
+#app .app-shell .app-topbar :is(.app-wordmark,.app-wordmark strong,.app-topbar-title strong,.app-topbar-title small,.app-role-label){color:#fff}
+#app .app-shell .app-wordmark>span,#app .app-shell .app-avatar{background:linear-gradient(135deg,#00e9ff,#00bcff);color:#173d88}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi){background:var(--account-tile,#0013ff);border-color:#ffffff59;box-shadow:0 8px 20px #173d8817}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+1){--account-tile:#0013ff;--account-label:#fff}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+2){--account-tile:#0083ff;--account-label:#092855}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+3){--account-tile:#00bcff;--account-label:#173d88}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+4){--account-tile:#00d7f8;--account-label:#173d88}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+5){--account-tile:#00e9ff;--account-label:#173d88}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(n){background:var(--account-tile)}
+#app .app-shell .app-topbar .app-topbar-title :is(strong,small),#app .app-shell .app-topbar .app-wordmark strong{color:#fff!important}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi) :is(strong,small,em,i),#app .app-shell .app-kpi>span:not(.app-color-icon){color:var(--account-label,#173d88)}
+#app .app-shell .admin-hub-card>b{background:#ffffffd9;color:#173d88;border-color:#ffffff99}
+#app .app-shell .admin-hub-card:after{display:none}
+#app .app-shell .app-bottom-nav{background:#f5fcfff2;border-color:#b8eaff}
+#app .app-shell .app-bottom-nav .app-nav-item.active{background:#0013ff;color:#fff}
+#app .app-shell :is(.account-filter,.planning-day,.task-contact,.task-icon,.date-tile){background:#e0f8ff;border-color:#a8dfff;color:#173d88}
+#app .app-shell .account-filter button.selected{background:#00d7f8;color:#173d88;box-shadow:none}
+#app .app-shell :is(.app-booking-card,.task-card,.planning-panel){background:#fafdff;border-color:#b8eaff}
+#app .app-shell .task-card.active-task{border-color:#0083ff}
+#app .app-shell :is(.team-pulse,.summary-card){background:linear-gradient(115deg,#0013ff,#0083ff);border-color:#0083ff;color:#fff}
+#app .app-shell :is(.app-live i,.team-pulse i){background:#00e9ff;box-shadow:0 0 0 4px #00e9ff26}
+#app .app-shell :is(.task-note,.notice){background:#e0f8ff;color:#173d88;border-color:#a8dfff}
+#app .app-shell :is(.btn-primary,.btn-gold,.app-fab),body:has(.app-shell) #modal :is(.btn-primary,.btn-gold){background:linear-gradient(115deg,#00bcffbb,#00e9ff99);border-color:#ffffffcc;color:#173d88;box-shadow:0 5px 14px #0083ff20}
+#app .app-shell :is(.btn-light,.icon-btn){background:#ffffff99;border-color:#b8eaff;color:#173d88}
+#app .app-shell .option-card.selected{background:#e0f8ff;border-color:#0083ff;color:#173d88}
+#app .app-shell .journey-step.current>span{background:#0013ff;color:#fff}
+#app .app-shell .journey-step.done>span{background:#00d7f8;color:#173d88}
+body:has(.app-shell) #modal .modal{background:linear-gradient(145deg,#f3fbfff5,#e9f8fff5);border-color:#b8eaff;color:#173d88}
+body:has(.app-shell) #modal :is(.profile-identity,.profile-avatar-large){background:linear-gradient(115deg,#bdefff,#c5fbff);color:#173d88}
+body:has(.app-shell) #modal :is(input,select,textarea),#app .app-shell :is(input,select,textarea){border-color:#acdfff;color:#173d88;accent-color:#0013ff}
+#app .app-shell :is(.btn,.app-nav-item,.admin-hub-card,.shortcut-grid>*):focus-visible{outline-color:#0013ff}
+
+/* Blend mauve into blue while retaining readable labels and glass buttons. */
+.app-shell{--palette-mauve:#7539cc;background:linear-gradient(145deg,#f0fbff,#edf3ff 65%,#f1eaff)}
+#app .app-shell .account-welcome{background:linear-gradient(115deg,#e6f6ff,#e6efff 60%,#ede1ff);border-color:#c9dcff}
+#app .app-shell .app-topbar{background:linear-gradient(110deg,#0013ff,#2459ed 55%,#7539cc);border-color:#5768e9}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+2){--account-tile:linear-gradient(135deg,#2159df,#7539cc);--account-label:#fff}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(5n+4){--account-tile:linear-gradient(135deg,#0083ff,#6536bf);--account-label:#fff}
+#app .app-shell .app-bottom-nav .app-nav-item.active{background:linear-gradient(115deg,#0013ff,#7539cc);color:#fff}
+#app .app-shell :is(.team-pulse,.summary-card){background:linear-gradient(115deg,#0013ff,#285fea 55%,#7539cc);border-color:#6675ea}
+#app .app-shell :is(.btn-primary,.btn-gold,.app-fab),body:has(.app-shell) #modal :is(.btn-primary,.btn-gold){background:linear-gradient(115deg,#00bcff99,#a9c5ffb3 55%,#c9a4ef99);border-color:#ffffffcc;color:#173d88}
+#app .app-shell .account-filter button.selected{background:linear-gradient(115deg,#c1eeff,#ded0fa);color:#173d88}
+body:has(.app-shell) #modal .profile-identity{background:linear-gradient(115deg,#bdefff,#e4d4fa);color:#173d88}
+
+/* Phosphor duotone pictograms: crisp shapes on a quiet glass surface. */
+#app .app-shell .app-color-icon img,#app .app-shell .admin-hub-icon img{box-sizing:border-box;padding:9px;border-radius:16px;background:#ffffffed;border:1px solid #ffffff80;filter:none;box-shadow:none}
+#app .app-shell .admin-hub-icon img{padding:12px;border-radius:18px}
+#app .app-shell .app-kpi .app-color-icon img{padding:5px;border-radius:10px}
+#app .app-shell .app-bottom-nav .app-color-icon img{padding:4px;border-radius:9px}
+#app .app-shell .app-nav-item.active .app-color-icon img{background:#ffffffed}
+#app .app-shell .account-logout img{box-sizing:border-box;padding:5px;border-radius:11px;background:#fff1f3}
+.photo-selected-files{list-style:none;padding:0;margin:12px 0;display:grid;gap:8px}.photo-selected-files li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid #b8eaff;border-radius:12px;background:#eef8ff}.photo-selected-files li>span{min-width:0;overflow-wrap:anywhere}.photo-selected-files .btn{flex-shrink:0}.photo-upload input[type=file]{max-width:100%;min-width:0}.photo-upload button:disabled{opacity:.6;cursor:wait}
+.booking-gps{padding:16px;border:1px solid #badbff;border-radius:18px;background:linear-gradient(115deg,#e0f6ff,#e8dcfa);margin:16px 0}.booking-gps small{display:block;margin-top:10px;line-height:1.6;color:#173d88}.booking-gps p{margin:10px 0 0;font-size:13px;color:#173d88}.booking-gps button:disabled{opacity:.6}.navigation-panel .leaflet-control-layers{font-family:inherit;color:#173d88}.navigation-panel .leaflet-control-attribution{font-size:9px;background:#ffffffe6}.route-actions{flex-wrap:wrap}.route-actions .btn{white-space:normal}
+
+/* A quieter account workspace, inspired by a structured personal portal. */
+#app .app-shell{background:radial-gradient(ellipse at 8% 0%,#c4e7ff 0%,transparent 45%),radial-gradient(ellipse at 95% 35%,#e0d5f5 0%,transparent 48%),#edf2f8}
+#app .app-shell .app-topbar{background:linear-gradient(110deg,#ffffffc9,#eaf3ffb3 65%,#e9e1f6b3);border-color:#ffffff;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 2px 12px #173d8809}
+#app .app-shell .app-topbar :is(.app-wordmark,.app-wordmark strong,.app-topbar-title strong,.app-topbar-title small,.app-role-label){color:#173d88!important}
+#app .app-shell .account-welcome{background:linear-gradient(110deg,#ffffffb8,#e6f2ff99 65%,#e9ddf599);border:1px solid #ffffff;border-radius:16px;box-shadow:0 5px 20px #173d8808;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+#app .app-shell .account-welcome h1{font-size:clamp(28px,3vw,42px);letter-spacing:-.035em}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(n){background:linear-gradient(135deg,#ffffffc9,#eaf2ff91);--account-label:#173d88;border:1px solid #ffffff;border-radius:16px;box-shadow:0 4px 16px #173d880a;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+#app .app-shell :is(.shortcut-grid>*,.admin-hub-card,.app-kpi):nth-child(even){background:linear-gradient(135deg,#ffffffc9,#e9def78a)}
+#app .app-shell :is(.app-booking-card,.task-card,.planning-panel){background:#ffffffb8;border:1px solid #ffffff;border-radius:16px;box-shadow:0 4px 16px #173d8808;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+#app .app-shell .admin-hub-card{min-height:184px;padding:20px 16px}
+#app .app-shell .admin-hub-card strong{font-size:18px}
+#app .app-shell .admin-hub-card small{letter-spacing:.09em}
+#app .app-shell .admin-hub-card>b{background:#e5ebffb3;border-color:#fff;color:#173d88}
+#app .app-shell .app-bottom-nav{background:#ffffffbd;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+body:has(.app-shell) #modal .modal:has(.profile-editor){width:min(880px,calc(100vw - 40px));max-width:880px;padding:24px;background:linear-gradient(135deg,#f4f9ffd9,#eeeaf8d9);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid #fff;border-radius:20px;overflow-x:hidden}
+.profile-editor{display:grid;gap:16px;min-width:0;width:100%}
+.profile-editor .profile-cover{height:100px;border-radius:12px 12px 0 0;background:radial-gradient(ellipse at 20% 100%,#00bcff44,transparent 60%),linear-gradient(120deg,#c7dffc9c,#ebe0f9ad);margin-bottom:-16px}
+body:has(.app-shell) #modal .profile-editor .profile-identity{margin:0;gap:18px;padding:20px 24px;background:#ffffffa3;border:1px solid #fff;border-radius:0 0 12px 12px;min-width:0}
+.profile-editor .profile-identity>div{min-width:0}.profile-editor .profile-identity p{overflow-wrap:anywhere}.profile-editor .profile-identity h3{font-size:22px;margin:6px 0}
+.profile-editor .profile-section{padding:20px 24px;margin:0;background:#ffffffa3;border:1px solid #fff;border-radius:12px;box-shadow:0 3px 12px #173d8806;min-width:0}
+.profile-editor .profile-section-title{margin:0 0 18px;font-size:15px;font-weight:600;letter-spacing:0;color:#173d88;padding-bottom:12px;border-bottom:1px solid #173d8812}
+.profile-editor .form-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px}.profile-editor .field{min-width:0;margin:0}.profile-editor .field label{font-size:12px;margin-bottom:6px}
+body:has(.app-shell) #modal .profile-editor :is(input,select,textarea){width:100%;max-width:100%;min-width:0;background:#ffffff85;border-color:#bacce88c;border-radius:8px;padding:11px 12px;font-size:14px}
+.profile-editor .profile-hint{margin:14px 0 0;font-size:12px}.profile-editor .profile-save-bar{display:flex;justify-content:flex-end}.profile-editor .profile-save-bar .btn{border-radius:9px;min-width:150px}.profile-editor .profile-app-options summary{font-size:14px;font-weight:600}
+@media(max-width:650px){body:has(.app-shell) #modal .modal:has(.profile-editor){width:100%;max-width:100%;padding:18px;border-radius:22px 22px 0 0}.profile-editor{gap:12px}.profile-editor .profile-cover{height:76px;margin-bottom:-12px}.profile-editor .profile-section,body:has(.app-shell) #modal .profile-editor .profile-identity{padding:18px}.profile-editor .form-grid{grid-template-columns:minmax(0,1fr);gap:14px}.profile-editor .profile-save-bar .btn{width:100%}#app .app-shell .admin-hub-card{min-height:195px;padding:20px 12px}}
